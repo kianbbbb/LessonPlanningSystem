@@ -1,0 +1,159 @@
+{
+  "version": "1.0",
+  "description": "UK National Curriculum 2014 lesson structure definition. Each component describes a phase of the lesson.",
+  "lessonDuration": 60,
+  "components": [
+    {
+      "id": "walt",
+      "label": "WALT",
+      "fullName": "We Are Learning To",
+      "description": "The main learning intention for the lesson, derived directly from the curriculum objective.",
+      "displayType": "banner",
+      "required": true,
+      "slideColor": "#1a5276",
+      "slideTextColor": "#ffffff",
+      "timing": null
+    },
+    {
+      "id": "wilf",
+      "label": "WILF",
+      "fullName": "What I'm Looking For",
+      "description": "Success criteria that describe what a learner needs to demonstrate. Supports mastery learning.",
+      "displayType": "checklist",
+      "required": true,
+      "slideColor": "#1a5276",
+      "slideTextColor": "#ffffff",
+      "timing": null
+    },
+    {
+      "id": "key-vocabulary",
+      "label": "Key Vocabulary",
+      "fullName": "Key Vocabulary",
+      "description": "Subject-specific vocabulary learners must understand and use accurately during this lesson.",
+      "displayType": "glossary",
+      "required": true,
+      "slideColor": "#0e6655",
+      "slideTextColor": "#ffffff",
+      "timing": 5
+    },
+    {
+      "id": "starter",
+      "label": "Starter",
+      "fullName": "Starter / Retrieval Activity",
+      "description": "A short retrieval or warm-up activity (5–10 minutes) that activates prior knowledge and prepares learners for the new content.",
+      "displayType": "activity",
+      "required": true,
+      "slideColor": "#784212",
+      "slideTextColor": "#ffffff",
+      "timing": 10
+    },
+    {
+      "id": "main-teaching",
+      "label": "Main Teaching",
+      "fullName": "Main Teaching Input",
+      "description": "Direct instruction, modelling, and explanation of new concepts. Teacher-led, with opportunities for questioning.",
+      "displayType": "teaching",
+      "required": true,
+      "slideColor": "#1a237e",
+      "slideTextColor": "#ffffff",
+      "timing": 15
+    },
+    {
+      "id": "guided-practice",
+      "label": "Guided Practice",
+      "fullName": "Guided Practice (We Do)",
+      "description": "Learners practise with teacher support. Includes worked examples, think-pair-share, and mini-whiteboard activities.",
+      "displayType": "activity",
+      "required": true,
+      "slideColor": "#4a235a",
+      "slideTextColor": "#ffffff",
+      "timing": 10
+    },
+    {
+      "id": "independent-practice",
+      "label": "Independent Practice",
+      "fullName": "Independent Practice (You Do)",
+      "description": "Learners apply their understanding independently. Differentiated tasks for developing, expected, and mastery levels.",
+      "displayType": "activity",
+      "required": true,
+      "slideColor": "#1b4f72",
+      "slideTextColor": "#ffffff",
+      "timing": 15,
+      "differentiation": {
+        "developing": "Scaffolded tasks with prompts and sentence frames",
+        "expected": "Standard tasks meeting the curriculum objective",
+        "mastery": "Greater depth and reasoning tasks — applying knowledge in unfamiliar contexts"
+      }
+    },
+    {
+      "id": "mastery-check",
+      "label": "Mastery Check",
+      "fullName": "Mastery Check / Exit Ticket",
+      "description": "A short, focused assessment activity (2–3 questions) that determines whether each learner has met the WALT. Results inform next lesson planning.",
+      "displayType": "assessment",
+      "required": true,
+      "slideColor": "#145a32",
+      "slideTextColor": "#ffffff",
+      "timing": 5
+    },
+    {
+      "id": "plenary",
+      "label": "Plenary",
+      "fullName": "Plenary / Reflection",
+      "description": "Whole-class consolidation. Review WALT, share key findings, address misconceptions, and link to future learning.",
+      "displayType": "reflection",
+      "required": true,
+      "slideColor": "#4d0000",
+      "slideTextColor": "#ffffff",
+      "timing": 5
+    }
+  ],
+  "differentiationStrategies": {
+    "SEN": [
+      "Pre-teach key vocabulary",
+      "Provide sentence frames and word mats",
+      "Use visual representations and concrete manipulatives",
+      "Reduce quantity, not complexity",
+      "Pair with a supportive talk partner"
+    ],
+    "EAL": [
+      "Display bilingual vocabulary support",
+      "Use visual cues alongside text",
+      "Provide worked examples with step-by-step annotations",
+      "Allow extra processing time",
+      "Accept home language as a thinking tool"
+    ],
+    "giftedAndTalented": [
+      "Open-ended investigation tasks",
+      "Justify and prove reasoning",
+      "Apply concepts to real-world or unfamiliar contexts",
+      "Create their own problems or examples",
+      "Peer teaching opportunities"
+    ]
+  },
+  "assessmentStrategies": [
+    "Exit ticket (Mastery Check)",
+    "Mini-whiteboard responses",
+    "Targeted questioning (Bloom's taxonomy)",
+    "Peer assessment against WILF",
+    "Self-assessment traffic light"
+  ],
+  "timingGuidance": {
+    "60min": {
+      "starter": 10,
+      "mainTeaching": 15,
+      "guidedPractice": 10,
+      "independentPractice": 15,
+      "masteryCheck": 5,
+      "plenary": 5
+    },
+    "45min": {
+      "starter": 5,
+      "mainTeaching": 10,
+      "guidedPractice": 10,
+      "independentPractice": 12,
+      "masteryCheck": 5,
+      "plenary": 3
+    }
+  }
+}

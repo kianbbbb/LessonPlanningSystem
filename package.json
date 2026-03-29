@@ -1,0 +1,27 @@
+{
+  "name": "lesson-planning-system",
+  "version": "1.0.0",
+  "description": "AI-powered lesson planning system for the UK National Curriculum 2014, supporting Maths and Literacy across all Key Stages",
+  "main": "src/agent.js",
+  "bin": {
+    "plan-lesson": "./bin/plan-lesson.js"
+  },
+  "scripts": {
+    "start": "node bin/plan-lesson.js",
+    "test": "node test/lesson-generator.test.js"
+  },
+  "keywords": [
+    "education",
+    "lesson-planning",
+    "uk-national-curriculum",
+    "maths",
+    "literacy",
+    "key-stages",
+    "ai-agent",
+    "html-presentation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

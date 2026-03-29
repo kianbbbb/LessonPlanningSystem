@@ -1,0 +1,236 @@
+{
+  "subject": "Maths",
+  "keyStage": "KS1",
+  "ageRange": "5–7",
+  "years": ["Year 1", "Year 2"],
+  "programmeOfStudy": "UK National Curriculum 2014",
+  "strands": [
+    {
+      "name": "Number and Place Value",
+      "topics": [
+        {
+          "name": "Counting and Place Value",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Count to and across 100, forwards and backwards, beginning with 0 or 1, or from any given number",
+            "Count, read and write numbers to 100 in numerals; count in multiples of twos, fives and tens",
+            "Given a number, identify one more and one less",
+            "Recognise the place value of each digit in a two-digit number (tens, ones)",
+            "Identify, represent and estimate numbers using different representations, including the number line",
+            "Compare and order numbers from 0 up to 100; use <, > and = signs",
+            "Read and write numbers to at least 100 in numerals and in words"
+          ],
+          "keyVocab": [
+            { "term": "digit", "definition": "A single number symbol (0–9)" },
+            { "term": "place value", "definition": "The value of a digit based on its position in a number" },
+            { "term": "tens", "definition": "Groups of ten units" },
+            { "term": "ones / units", "definition": "Single items, not grouped" },
+            { "term": "more than / less than", "definition": "Comparison of two numbers" },
+            { "term": "estimate", "definition": "A sensible guess at an amount" },
+            { "term": "compare", "definition": "To look at differences and similarities between numbers" }
+          ],
+          "masteryIndicators": [
+            "I can say what each digit in a 2-digit number represents",
+            "I can partition a 2-digit number into tens and ones",
+            "I can order numbers up to 100 from smallest to largest",
+            "I can find 10 more or 10 less than any 2-digit number"
+          ],
+          "starter": "Show a 2-digit number on the board — pupils write tens and ones on mini-whiteboards",
+          "guidedPractice": "Use base-10 blocks: teacher models partitioning 34 as 3 tens and 4 ones; pupils repeat with different numbers",
+          "independentPractice": "Developing: place value charts with digit cards. Expected: order 5 numbers on a number line. Mastery: explain the difference between 37 and 73; write own examples.",
+          "masteryCheck": "Write the value of the underlined digit: 4_5, 7_2, 3_8. Then place 47, 74, 44 in order."
+        },
+        {
+          "name": "Addition and Subtraction within 20",
+          "years": ["Year 1"],
+          "objectives": [
+            "Read, write and interpret mathematical statements involving addition (+), subtraction (−) and equals (=) signs",
+            "Represent and use number bonds and related subtraction facts within 20",
+            "Add and subtract one-digit and two-digit numbers to 20, including zero",
+            "Solve one-step problems that involve addition and subtraction using concrete objects and pictorial representations, and missing number problems"
+          ],
+          "keyVocab": [
+            { "term": "add / addition", "definition": "Combining two or more numbers to find the total" },
+            { "term": "subtract / subtraction", "definition": "Taking one number away from another" },
+            { "term": "equals", "definition": "Has the same value as" },
+            { "term": "number bond", "definition": "A pair of numbers that add together to make another number" },
+            { "term": "total", "definition": "The answer to an addition" },
+            { "term": "difference", "definition": "The answer to a subtraction" }
+          ],
+          "masteryIndicators": [
+            "I can recall all number bonds to 10 and 20",
+            "I can use a number line to add and subtract",
+            "I can write a number sentence for a word problem",
+            "I can use the inverse to check my answer"
+          ],
+          "starter": "Number bond ping pong: teacher says a number, pupils call out its pair to make 10",
+          "guidedPractice": "Use a number line: teacher models counting on to add, counting back to subtract; pupils try with different numbers",
+          "independentPractice": "Developing: number bond to 10 matching cards. Expected: solve 5 addition and 5 subtraction calculations. Mastery: write own story problems for given calculations.",
+          "masteryCheck": "Solve: 7 + ? = 15, 20 − 8 = ?, 6 + 9 = ?"
+        }
+      ]
+    },
+    {
+      "name": "Addition and Subtraction",
+      "topics": [
+        {
+          "name": "Addition and Subtraction within 100",
+          "years": ["Year 2"],
+          "objectives": [
+            "Solve problems with addition and subtraction using concrete objects and pictorial representations",
+            "Recall and use addition and subtraction facts to 20 fluently, and derive and use related facts up to 100",
+            "Add and subtract numbers using concrete objects, pictorial representations, and mentally",
+            "Show that addition of two numbers can be done in any order (commutative) and subtraction of one number from another cannot",
+            "Recognise and use the inverse relationship between addition and subtraction"
+          ],
+          "keyVocab": [
+            { "term": "commutative", "definition": "Can be done in any order and give the same result" },
+            { "term": "inverse", "definition": "The opposite operation" },
+            { "term": "partition", "definition": "Splitting a number into parts" },
+            { "term": "bridging", "definition": "Adding or subtracting through a multiple of 10" }
+          ],
+          "masteryIndicators": [
+            "I can add two 2-digit numbers mentally",
+            "I can explain why addition is commutative",
+            "I can use inverse operations to check my calculations",
+            "I can solve two-step word problems"
+          ],
+          "starter": "Rapid-fire: 30 + 40 =?, 60 − 20 =? on mini whiteboards",
+          "guidedPractice": "Column addition with place value columns: teacher models 45 + 37, linking to partitioning",
+          "independentPractice": "Developing: two 2-digit numbers < 50 (no regrouping). Expected: standard column addition and subtraction. Mastery: write a two-step word problem and solve it.",
+          "masteryCheck": "Work out 56 + 27 = ? and 83 − 46 = ? Show your method."
+        }
+      ]
+    },
+    {
+      "name": "Multiplication and Division",
+      "topics": [
+        {
+          "name": "Multiplication and Division",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Solve one-step problems involving multiplication and division, using concrete objects, pictorial representations and arrays",
+            "Count in multiples of 2, 5 and 10",
+            "Calculate mathematical statements for multiplication (×) and division (÷) and write them using the multiplication (×), division (÷) and equals (=) signs",
+            "Show that multiplication of two numbers can be done in any order (commutative) and division of one number by another cannot",
+            "Solve problems involving multiplication and division, using materials, arrays, repeated addition, mental methods"
+          ],
+          "keyVocab": [
+            { "term": "multiply / times", "definition": "Repeated addition of the same number" },
+            { "term": "divide / share", "definition": "Splitting into equal groups" },
+            { "term": "array", "definition": "Objects arranged in rows and columns" },
+            { "term": "equal groups", "definition": "Groups that contain the same number of items" },
+            { "term": "multiple", "definition": "A number in a times table" }
+          ],
+          "masteryIndicators": [
+            "I can count in 2s, 5s and 10s",
+            "I can use arrays to represent multiplication",
+            "I know the 2, 5 and 10 times tables",
+            "I can write multiplication and division fact families"
+          ],
+          "starter": "Chant the 2 times table together, then jumble order on the board",
+          "guidedPractice": "Draw arrays: 3 rows of 4 — write the multiplication and division sentences",
+          "independentPractice": "Developing: complete array pictures to write × sentences. Expected: 2, 5, 10 times tables problems. Mastery: fact families — write all 4 related facts.",
+          "masteryCheck": "Draw an array for 4 × 3, write all 4 facts. What is 20 ÷ 5?"
+        }
+      ]
+    },
+    {
+      "name": "Fractions",
+      "topics": [
+        {
+          "name": "Fractions",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Recognise, find and name a half as one of two equal parts of an object, shape or quantity",
+            "Recognise, find and name a quarter as one of four equal parts of an object, shape or quantity",
+            "Recognise, find, name and write fractions 1/3, 1/4, 2/4 and 3/4 of a length, shape, set of objects or quantity",
+            "Write simple fractions e.g. 1/2 of 6 = 3 and recognise the equivalence of 2/4 and 1/2"
+          ],
+          "keyVocab": [
+            { "term": "fraction", "definition": "An equal part of a whole" },
+            { "term": "numerator", "definition": "The top number — how many parts we have" },
+            { "term": "denominator", "definition": "The bottom number — how many equal parts in total" },
+            { "term": "half", "definition": "One of two equal parts" },
+            { "term": "quarter", "definition": "One of four equal parts" },
+            { "term": "equivalent", "definition": "Equal in value" }
+          ],
+          "masteryIndicators": [
+            "I can find 1/2 and 1/4 of shapes and amounts",
+            "I can explain that fractions must be equal parts",
+            "I know that 2/4 = 1/2",
+            "I can find fractions of quantities (e.g. 1/4 of 12)"
+          ],
+          "starter": "Show folded paper shapes — are these halves? Why or why not?",
+          "guidedPractice": "Fold and shade: fold a rectangle into halves, quarters; link to notation",
+          "independentPractice": "Developing: shade halves/quarters of shapes. Expected: find fractions of amounts. Mastery: explain equivalence with diagrams.",
+          "masteryCheck": "Shade 3/4 of a shape. What is 1/4 of 20? Explain how you know 2/4 = 1/2."
+        }
+      ]
+    },
+    {
+      "name": "Measurement",
+      "topics": [
+        {
+          "name": "Length and Height",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Compare, describe and solve practical problems for lengths and heights",
+            "Measure and begin to record lengths and heights",
+            "Choose and use appropriate standard units to estimate and measure length (m/cm/mm) using rulers"
+          ],
+          "keyVocab": [
+            { "term": "length", "definition": "How long something is" },
+            { "term": "height", "definition": "How tall something is" },
+            { "term": "centimetre (cm)", "definition": "A unit of length; 100 cm = 1 m" },
+            { "term": "metre (m)", "definition": "A unit of length equal to 100 centimetres" },
+            { "term": "estimate", "definition": "A sensible guess before measuring" }
+          ],
+          "masteryIndicators": [
+            "I can measure length in cm using a ruler correctly",
+            "I can compare lengths using < > =",
+            "I can estimate a length before measuring",
+            "I can order objects by length"
+          ],
+          "starter": "Hold up classroom objects — pupils estimate length on mini-whiteboards",
+          "guidedPractice": "Model measuring a pencil with a ruler, starting from 0; common errors (not starting at 0)",
+          "independentPractice": "Developing: measure given lines. Expected: measure and compare 5 objects. Mastery: measure objects and order from shortest to longest with reasoning.",
+          "masteryCheck": "Measure these two lines. Which is longer? By how much?"
+        }
+      ]
+    },
+    {
+      "name": "Geometry – Properties of Shape",
+      "topics": [
+        {
+          "name": "2D and 3D Shapes",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Recognise and name common 2D shapes: rectangles, squares, circles and triangles",
+            "Recognise and name common 3D shapes: cuboids, cubes, pyramids and spheres",
+            "Identify and describe the properties of 2D shapes, including the number of sides and line symmetry",
+            "Identify and describe the properties of 3D shapes, including the number of edges, vertices and faces",
+            "Compare and sort common 2D and 3D shapes and everyday objects"
+          ],
+          "keyVocab": [
+            { "term": "side", "definition": "A straight line that forms part of a 2D shape" },
+            { "term": "vertex / vertices", "definition": "A corner where two sides meet" },
+            { "term": "face", "definition": "A flat surface of a 3D shape" },
+            { "term": "edge", "definition": "A line where two faces of a 3D shape meet" },
+            { "term": "symmetry", "definition": "A shape is symmetrical if one half mirrors the other" }
+          ],
+          "masteryIndicators": [
+            "I can name and describe 2D and 3D shapes using properties",
+            "I can sort shapes by their properties",
+            "I can find lines of symmetry in 2D shapes",
+            "I can explain why a shape belongs in a given category"
+          ],
+          "starter": "Shape mystery bag: pupils feel a 3D shape and describe it",
+          "guidedPractice": "Teacher draws shapes on the board, class count sides, vertices together; record in table",
+          "independentPractice": "Developing: name shapes from pictures. Expected: complete properties table. Mastery: create a sorting rule for shapes and explain it.",
+          "masteryCheck": "Name this shape. How many sides, vertices, and lines of symmetry does it have?"
+        }
+      ]
+    }
+  ]
+}

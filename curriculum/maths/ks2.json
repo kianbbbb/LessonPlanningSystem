@@ -1,0 +1,306 @@
+{
+  "subject": "Maths",
+  "keyStage": "KS2",
+  "ageRange": "7–11",
+  "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+  "programmeOfStudy": "UK National Curriculum 2014",
+  "strands": [
+    {
+      "name": "Number and Place Value",
+      "topics": [
+        {
+          "name": "Place Value",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Recognise the place value of each digit in a 4-digit number (thousands, hundreds, tens and ones)",
+            "Order and compare numbers beyond 1000",
+            "Identify, represent and estimate numbers using different representations",
+            "Round any number to the nearest 10, 100 or 1000",
+            "Read Roman numerals to 100 (I to C)",
+            "Read, write, order and compare numbers to at least 1 000 000",
+            "Round any number up to 1 000 000 to the nearest 10, 100, 1000, 10 000 and 100 000",
+            "Read, write, order and compare numbers up to 10 000 000",
+            "Use negative numbers in context and calculate intervals across zero"
+          ],
+          "keyVocab": [
+            { "term": "thousands", "definition": "1000 units grouped together" },
+            { "term": "ten-thousands", "definition": "10 groups of 1000" },
+            { "term": "hundred-thousands", "definition": "100 groups of 1000" },
+            { "term": "millions", "definition": "1000 groups of 1000" },
+            { "term": "round", "definition": "Approximate a number to the nearest 10, 100, etc." },
+            { "term": "negative number", "definition": "A number less than zero" },
+            { "term": "Roman numerals", "definition": "Letters used to represent numbers in the Roman system" }
+          ],
+          "masteryIndicators": [
+            "I can explain the value of each digit in a large number",
+            "I can round numbers to any given power of 10",
+            "I can order and compare numbers in the millions",
+            "I can solve problems involving negative numbers"
+          ],
+          "starter": "Show a large number on the board — pupils write its value on mini-whiteboards and round it to different powers of 10",
+          "guidedPractice": "Place value chart: teacher models partitioning 347,892; pupils identify each digit's value",
+          "independentPractice": "Developing: order 5 numbers up to 10,000. Expected: round numbers to 1000 and 10,000. Mastery: explain why two numbers round to the same value; create place value puzzles.",
+          "masteryCheck": "Write 3,045,720 in words. Round it to the nearest 1,000 and 100,000."
+        }
+      ]
+    },
+    {
+      "name": "Addition, Subtraction, Multiplication and Division",
+      "topics": [
+        {
+          "name": "Written Addition and Subtraction",
+          "years": ["Year 3", "Year 4"],
+          "objectives": [
+            "Add and subtract numbers with up to 4 digits using the formal written methods of columnar addition and subtraction where appropriate",
+            "Estimate and use inverse operations to check answers to a calculation",
+            "Solve addition and subtraction two-step problems in contexts"
+          ],
+          "keyVocab": [
+            { "term": "column method", "definition": "A written method for calculating with digits aligned in columns" },
+            { "term": "regroup / exchange", "definition": "Moving value between columns when a digit exceeds 9" },
+            { "term": "inverse", "definition": "The opposite operation, used to check answers" },
+            { "term": "estimate", "definition": "An approximate answer calculated before solving precisely" }
+          ],
+          "masteryIndicators": [
+            "I can add and subtract 4-digit numbers using column method with regrouping",
+            "I can use inverse to check my answer",
+            "I can solve two-step word problems",
+            "I can explain what an estimate shows"
+          ],
+          "starter": "Quick-fire mental: 400 + 600, 1000 − 350, etc.",
+          "guidedPractice": "Teacher works through a column addition with regrouping step by step; pupils copy and then try next example",
+          "independentPractice": "Developing: additions without regrouping. Expected: 4-digit ± with regrouping. Mastery: two-step problems; write own problems.",
+          "masteryCheck": "Calculate 4,726 + 1,895. Check using the inverse. Explain your method."
+        },
+        {
+          "name": "Multiplication and Division",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Recall and use multiplication and division facts for the 3, 4, 6, 7, 8, 9, 11 and 12 multiplication tables",
+            "Multiply 2-digit and 3-digit numbers by a 1-digit number using formal written layout",
+            "Multiply numbers up to 4 digits by a 1- or 2-digit number using a formal written method",
+            "Divide numbers up to 4 digits by a 1-digit number using the formal written method of short division",
+            "Multiply and divide whole numbers and decimals by 10, 100 and 1000",
+            "Identify common factors, common multiples and prime numbers",
+            "Multiply multi-digit numbers up to 4 digits by a 2-digit whole number using the formal written method of long multiplication",
+            "Divide numbers up to 4 digits by a 2-digit whole number using the formal written method of long division"
+          ],
+          "keyVocab": [
+            { "term": "factor", "definition": "A number that divides exactly into another" },
+            { "term": "multiple", "definition": "The result of multiplying a number by a whole number" },
+            { "term": "prime number", "definition": "A number with exactly two factors: 1 and itself" },
+            { "term": "short division / bus stop method", "definition": "A written method for division by a single digit" },
+            { "term": "long multiplication", "definition": "A written method for multiplying by a 2-digit number" },
+            { "term": "remainder", "definition": "What is left over after division" }
+          ],
+          "masteryIndicators": [
+            "I can recall all multiplication and division facts to 12×12",
+            "I can multiply 4-digit numbers by 2-digit numbers",
+            "I can use long division accurately",
+            "I can find all factor pairs of a number",
+            "I can explain what makes a prime number"
+          ],
+          "starter": "Times table test: 10 questions from selected tables",
+          "guidedPractice": "Model long multiplication step by step with place value emphasis",
+          "independentPractice": "Developing: 2-digit × 1-digit. Expected: 3/4-digit × 2-digit long multiplication. Mastery: prime factor decomposition; explain why a method works.",
+          "masteryCheck": "Calculate 347 × 26. List all factors of 36. Is 51 prime? Explain."
+        }
+      ]
+    },
+    {
+      "name": "Fractions, Decimals and Percentages",
+      "topics": [
+        {
+          "name": "Fractions",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Recognise and show, using diagrams, families of common equivalent fractions",
+            "Add and subtract fractions with the same denominator",
+            "Compare and order fractions whose denominators are all multiples of the same number",
+            "Add and subtract fractions with different denominators using the concept of equivalent fractions",
+            "Multiply proper fractions and mixed numbers by whole numbers",
+            "Divide proper fractions by whole numbers"
+          ],
+          "keyVocab": [
+            { "term": "equivalent fraction", "definition": "Fractions that have the same value" },
+            { "term": "simplify", "definition": "To reduce a fraction to its simplest form" },
+            { "term": "mixed number", "definition": "A whole number and a fraction combined" },
+            { "term": "improper fraction", "definition": "A fraction where the numerator is greater than the denominator" },
+            { "term": "common denominator", "definition": "A shared denominator that allows fractions to be compared or added" }
+          ],
+          "masteryIndicators": [
+            "I can find equivalent fractions using multiplication and division",
+            "I can add and subtract fractions with different denominators",
+            "I can convert between mixed numbers and improper fractions",
+            "I can multiply a fraction by a whole number"
+          ],
+          "starter": "Fraction wall display — which fractions are equivalent?",
+          "guidedPractice": "Teacher demonstrates finding common denominators to add 1/3 + 1/4; step-by-step with diagrams",
+          "independentPractice": "Developing: add/subtract fractions same denominator. Expected: different denominators. Mastery: multi-step fraction problems.",
+          "masteryCheck": "Calculate 2/3 + 3/4. Convert 11/4 to a mixed number."
+        },
+        {
+          "name": "Decimals and Percentages",
+          "years": ["Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Recognise and write decimal equivalents to 1/4, 1/2, 3/4",
+            "Identify the value of each digit in numbers given to three decimal places",
+            "Solve problems involving numbers up to three decimal places",
+            "Recognise the per cent symbol (%) and understand that per cent relates to 'number of parts per hundred'",
+            "Recall and use equivalences between simple fractions, decimals and percentages"
+          ],
+          "keyVocab": [
+            { "term": "decimal", "definition": "A number with digits after the decimal point representing parts of a whole" },
+            { "term": "decimal point", "definition": "The dot separating whole numbers from fractional parts" },
+            { "term": "percentage", "definition": "A number expressed as a fraction of 100" },
+            { "term": "tenths", "definition": "Parts of one whole divided into 10 equal pieces" },
+            { "term": "hundredths", "definition": "Parts of one whole divided into 100 equal pieces" },
+            { "term": "thousandths", "definition": "Parts of one whole divided into 1000 equal pieces" }
+          ],
+          "masteryIndicators": [
+            "I can convert between fractions, decimals and percentages",
+            "I can compare and order decimals to 3 decimal places",
+            "I can calculate percentages of amounts",
+            "I can solve problems using FDP interchangeably"
+          ],
+          "starter": "FDP triangle: fill in missing fraction, decimal or percentage",
+          "guidedPractice": "Number line: place 0.5, 0.25, 0.75, 50%, 25%; show how fractions, decimals and percentages relate",
+          "independentPractice": "Developing: match equivalent FDP cards. Expected: convert and calculate percentages of amounts. Mastery: problem solving with FDP in real-world contexts.",
+          "masteryCheck": "Write 35% as a fraction and decimal. Find 15% of 80."
+        }
+      ]
+    },
+    {
+      "name": "Ratio and Proportion",
+      "topics": [
+        {
+          "name": "Ratio and Proportion",
+          "years": ["Year 6"],
+          "objectives": [
+            "Solve problems involving the relative sizes of two quantities where missing values can be found using multiplication and division facts",
+            "Solve problems involving the calculation of percentages",
+            "Solve problems involving similar shapes where the scale factor is known",
+            "Solve problems involving unequal sharing and grouping using knowledge of fractions and multiples"
+          ],
+          "keyVocab": [
+            { "term": "ratio", "definition": "A comparison of two quantities showing how many times one is as big as the other" },
+            { "term": "proportion", "definition": "A part, share, or number considered in comparative relation to a whole" },
+            { "term": "scale factor", "definition": "The number by which a shape is enlarged or reduced" },
+            { "term": "unequal sharing", "definition": "Sharing in a given ratio" }
+          ],
+          "masteryIndicators": [
+            "I can share in a given ratio",
+            "I can use ratio notation correctly",
+            "I can scale recipes and quantities",
+            "I can solve proportion problems in context"
+          ],
+          "starter": "Recipe challenge: if this serves 4, what quantities for 6?",
+          "guidedPractice": "Bar model approach to ratio: 3:5 sharing 40 items",
+          "independentPractice": "Developing: simple 1:n ratios. Expected: sharing in 2-part ratio. Mastery: multi-step ratio and proportion problems.",
+          "masteryCheck": "Share £48 in the ratio 3:5. A recipe for 4 serves needs 200g flour. How much for 10?"
+        }
+      ]
+    },
+    {
+      "name": "Algebra",
+      "topics": [
+        {
+          "name": "Algebra",
+          "years": ["Year 6"],
+          "objectives": [
+            "Use simple formulae",
+            "Generate and describe linear number sequences",
+            "Express missing number problems algebraically",
+            "Find pairs of numbers that satisfy an equation with two unknowns",
+            "Enumerate possibilities of combinations of two variables"
+          ],
+          "keyVocab": [
+            { "term": "variable", "definition": "A letter that represents an unknown number" },
+            { "term": "formula", "definition": "A rule written with mathematical symbols" },
+            { "term": "expression", "definition": "A combination of numbers, variables and operations" },
+            { "term": "equation", "definition": "A mathematical statement with an equals sign showing two expressions are equal" },
+            { "term": "linear sequence", "definition": "A sequence where the difference between consecutive terms is constant" }
+          ],
+          "masteryIndicators": [
+            "I can substitute values into a formula",
+            "I can generate sequences using algebraic rules",
+            "I can solve one-step equations",
+            "I can find all possible solutions for a two-variable equation"
+          ],
+          "starter": "What's the rule? Give 3 terms of a sequence — pupils find and explain the rule",
+          "guidedPractice": "Model using balance scales to show equations; solve n + 5 = 12 with bar models",
+          "independentPractice": "Developing: missing number problems. Expected: one-step equations and sequences. Mastery: two-variable equations; enumerate all possibilities.",
+          "masteryCheck": "Find the value of n: 3n + 2 = 17. Generate the first 5 terms of the rule 2n + 1."
+        }
+      ]
+    },
+    {
+      "name": "Geometry – Properties of Shape",
+      "topics": [
+        {
+          "name": "Angles",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Recognise angles as a property of shape and associate angles with turning",
+            "Identify right angles and know that two right angles make a half-turn",
+            "Identify acute and obtuse angles",
+            "Estimate and compare acute, obtuse and reflex angles",
+            "Know angles are measured in degrees",
+            "Identify angles at a point, angles at a point on a straight line and recognise when angles sum to 90°, 180°, 360°"
+          ],
+          "keyVocab": [
+            { "term": "angle", "definition": "The amount of turn between two lines from a shared point" },
+            { "term": "degree (°)", "definition": "The unit used to measure angles" },
+            { "term": "right angle", "definition": "An angle of exactly 90°" },
+            { "term": "acute angle", "definition": "An angle less than 90°" },
+            { "term": "obtuse angle", "definition": "An angle greater than 90° but less than 180°" },
+            { "term": "reflex angle", "definition": "An angle greater than 180°" }
+          ],
+          "masteryIndicators": [
+            "I can identify and classify angles",
+            "I can use a protractor to measure angles accurately",
+            "I can calculate missing angles on a straight line and at a point",
+            "I can explain the angle properties of triangles and quadrilaterals"
+          ],
+          "starter": "Angle aerobics: pupils use arms to show acute, obtuse, right, reflex angles",
+          "guidedPractice": "Using a protractor: model measuring two angles, then pupils measure 3 given angles",
+          "independentPractice": "Developing: identify and name angles. Expected: measure with protractor. Mastery: calculate missing angles using properties.",
+          "masteryCheck": "Measure this angle. Calculate the missing angle on a straight line where one angle is 53°."
+        }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "topics": [
+        {
+          "name": "Data Handling and Graphs",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Interpret and present data using bar charts, pictograms and tables",
+            "Interpret and construct pie charts and line graphs",
+            "Solve comparison, sum and difference problems using information presented in charts",
+            "Calculate and interpret the mean as an average"
+          ],
+          "keyVocab": [
+            { "term": "data", "definition": "Information collected for analysis" },
+            { "term": "frequency", "definition": "How often something occurs" },
+            { "term": "mean", "definition": "The sum of all values divided by the number of values" },
+            { "term": "mode", "definition": "The value that appears most often" },
+            { "term": "median", "definition": "The middle value when data is ordered" },
+            { "term": "range", "definition": "The difference between the highest and lowest values" }
+          ],
+          "masteryIndicators": [
+            "I can construct and interpret a bar chart",
+            "I can calculate the mean of a set of data",
+            "I can read and interpret a line graph",
+            "I can compare data sets and draw conclusions"
+          ],
+          "starter": "Show a bar chart on the board — quick questions about data interpretation",
+          "guidedPractice": "Collect class data (e.g. favourite sports) and draw a bar chart together",
+          "independentPractice": "Developing: read given graphs. Expected: draw and label bar chart from data. Mastery: calculate mean; interpret and compare two data sets.",
+          "masteryCheck": "What is the mean of: 7, 4, 9, 2, 8? Describe what this tells you about the data."
+        }
+      ]
+    }
+  ]
+}
