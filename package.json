@@ -1,7 +1,7 @@
 {
   "name": "lesson-planning-system",
   "version": "1.0.0",
-  "description": "AI-powered lesson planning system for the UK National Curriculum 2014, supporting Maths and Literacy across all Key Stages",
+  "description": "AI-powered lesson planning system for the UK National Curriculum 2014, supporting Maths and Literacy across KS1 and KS2 (primary school)",
   "main": "src/agent.js",
   "bin": {
     "plan-lesson": "./bin/plan-lesson.js"

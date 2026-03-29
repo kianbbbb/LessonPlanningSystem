@@ -1,0 +1,310 @@
+{
+  "subject": "Literacy",
+  "keyStage": "KS2",
+  "ageRange": "7–11",
+  "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+  "programmeOfStudy": "UK National Curriculum 2014",
+  "strands": [
+    {
+      "name": "Spoken Language",
+      "topics": [
+        {
+          "name": "Oracy and Presentation",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Give well-structured descriptions, explanations and narratives for different purposes",
+            "Use spoken language to develop understanding through speculating, hypothesising, imagining and exploring ideas",
+            "Participate in discussions, presentations, performances, role play and debates",
+            "Gain, maintain and monitor the interest of the listener",
+            "Select and use appropriate registers for effective communication"
+          ],
+          "keyVocab": [
+            { "term": "register", "definition": "The style and formality of language chosen to suit the audience and purpose" },
+            { "term": "debate", "definition": "A structured argument where speakers take opposing views" },
+            { "term": "hypothesis", "definition": "A tentative idea or explanation to be explored" },
+            { "term": "rhetoric", "definition": "Language used to persuade or influence an audience" },
+            { "term": "tone", "definition": "The feeling or attitude conveyed through the voice or writing" }
+          ],
+          "masteryIndicators": [
+            "I can adapt my language for different audiences and purposes",
+            "I can present an argument clearly with supporting evidence",
+            "I can use persuasive techniques when speaking",
+            "I can listen critically and respond with a counter-argument"
+          ],
+          "starter": "Hot Seat: one pupil in role as a book character — class asks questions to find out more",
+          "guidedPractice": "Structured debate: teacher models 'I agree/disagree because…'; class practises formal opening statements",
+          "independentPractice": "Developing: use sentence stems (I think… because…). Expected: present a structured argument. Mastery: formal debate with rebuttal.",
+          "masteryCheck": "Give a 1-minute talk on a given topic. Assess: vocabulary, structure, engagement of audience."
+        }
+      ]
+    },
+    {
+      "name": "Reading – Word Reading",
+      "topics": [
+        {
+          "name": "Word Reading and Vocabulary",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Apply growing knowledge of root words, prefixes and suffixes to read aloud and understand the meaning of unfamiliar words",
+            "Read further exception words, noting unusual correspondences between spelling and pronunciation",
+            "Identify/explain the meaning of words in context",
+            "Discuss, explore and investigate word meanings, origins and associations"
+          ],
+          "keyVocab": [
+            { "term": "root word", "definition": "The base form of a word before any prefixes or suffixes are added" },
+            { "term": "etymology", "definition": "The origin and history of a word" },
+            { "term": "context", "definition": "The surrounding text that helps you work out the meaning of a word" },
+            { "term": "connotation", "definition": "The feeling or associations a word suggests beyond its literal meaning" },
+            { "term": "synonym", "definition": "A word with a similar meaning" },
+            { "term": "antonym", "definition": "A word with an opposite meaning" }
+          ],
+          "masteryIndicators": [
+            "I can work out the meaning of an unfamiliar word using roots and context",
+            "I can explain the effect of a word choice in a text",
+            "I can discuss synonyms and antonyms and explain differences in connotation",
+            "I can explain the origin of a word"
+          ],
+          "starter": "Word detectives: given 3 words with the same root — what do they share?",
+          "guidedPractice": "Read a passage together: pause on 3 words — model using context and root knowledge to infer meaning",
+          "independentPractice": "Developing: use a glossary to find word meanings. Expected: use context to infer meaning. Mastery: explore connotations and word choice effect.",
+          "masteryCheck": "Explain the meaning of [word] as used in the text. Why has the author chosen this word?"
+        }
+      ]
+    },
+    {
+      "name": "Reading – Comprehension",
+      "topics": [
+        {
+          "name": "Reading for Meaning",
+          "years": ["Year 3", "Year 4"],
+          "objectives": [
+            "Develop positive attitudes to reading and understanding of what they read",
+            "Identify themes and conventions in a wide range of books",
+            "Make inferences from what is stated and implied",
+            "Identify how language, structure and presentation contribute to meaning",
+            "Retrieve and record information from non-fiction"
+          ],
+          "keyVocab": [
+            { "term": "theme", "definition": "A big idea that runs through a text, e.g. friendship, courage" },
+            { "term": "inference", "definition": "Working out what the author means from clues in the text" },
+            { "term": "retrieve", "definition": "Find information that is directly stated in the text" },
+            { "term": "structure", "definition": "How a text is organised — paragraphs, sections, chapters" },
+            { "term": "skimming", "definition": "Reading quickly to get the gist or find a specific piece of information" },
+            { "term": "scanning", "definition": "Looking through a text to locate a specific word or piece of information" }
+          ],
+          "masteryIndicators": [
+            "I can make inferences and support them with evidence from the text",
+            "I can retrieve and record information accurately",
+            "I can explain what a theme is and give an example from the text",
+            "I can explain how structure helps the reader"
+          ],
+          "starter": "Inference warm-up: read 2–3 sentences — what can you infer about the character?",
+          "guidedPractice": "Shared reading: teacher models finding evidence to support inference using a PEDR frame (Point, Evidence, Develop, Relate)",
+          "independentPractice": "Developing: retrieval questions. Expected: inference with evidence. Mastery: analyse how structure contributes to meaning.",
+          "masteryCheck": "Answer: one retrieval, one inference, one theme question — all with text evidence."
+        },
+        {
+          "name": "Critical Reading",
+          "years": ["Year 5", "Year 6"],
+          "objectives": [
+            "Identify and discuss themes and conventions in a wide range of writing",
+            "Make comparisons within and across books",
+            "Ask questions to improve their understanding",
+            "Infer characters' feelings, thoughts and motives from their actions",
+            "Distinguish between statements of fact and opinion",
+            "Provide reasoned justifications for their views"
+          ],
+          "keyVocab": [
+            { "term": "bias", "definition": "A preference for one viewpoint over others, often without fair consideration of alternatives" },
+            { "term": "perspective", "definition": "A point of view or way of seeing something" },
+            { "term": "implicit", "definition": "Suggested or implied but not directly stated" },
+            { "term": "explicit", "definition": "Clearly stated directly in the text" },
+            { "term": "motif", "definition": "A recurring symbol, image or idea in a text" },
+            { "term": "compare", "definition": "Identify similarities and differences between two texts or elements" }
+          ],
+          "masteryIndicators": [
+            "I can compare two texts and explain similarities and differences",
+            "I can distinguish fact from opinion and explain the difference",
+            "I can explain a character's motives using evidence",
+            "I can evaluate the effectiveness of an author's choices"
+          ],
+          "starter": "Fact or opinion sort: give pupils a mix of statements to categorise",
+          "guidedPractice": "Compare two newspaper articles on the same event — identify bias, differing viewpoints; model analytical response",
+          "independentPractice": "Developing: identify one perspective in the text. Expected: compare viewpoints with evidence. Mastery: evaluate and critique authorial intent.",
+          "masteryCheck": "Is this text biased? Give three pieces of evidence to support your answer."
+        }
+      ]
+    },
+    {
+      "name": "Writing – Transcription",
+      "topics": [
+        {
+          "name": "Spelling",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Use further prefixes and suffixes and understand how to add them: -ation, -ly, -ous, -tion, -sion, -cian, -ssion",
+            "Place the possessive apostrophe accurately in words with regular plurals",
+            "Use the first two or three letters of a word to check its spelling in a dictionary",
+            "Apply knowledge of morphology and etymology to spelling",
+            "Spell words with 'silent' letters (e.g. knight, psalm, solemn)",
+            "Use hyphens to avoid ambiguity",
+            "Distinguish between homophones and near-homophones"
+          ],
+          "keyVocab": [
+            { "term": "morphology", "definition": "The study of the structure of words including roots, prefixes and suffixes" },
+            { "term": "possessive apostrophe", "definition": "An apostrophe (') used to show belonging, e.g. the dog's bone" },
+            { "term": "homophone", "definition": "Words that sound the same but have different spellings and meanings, e.g. there/their/they're" },
+            { "term": "etymology", "definition": "The origin and history of a word" },
+            { "term": "hyphen", "definition": "A punctuation mark (-) used to join words or separate syllables" }
+          ],
+          "masteryIndicators": [
+            "I can spell words from the Year 3/4 and Year 5/6 statutory word lists",
+            "I can apply morphological rules to spell new words",
+            "I can correctly use homophones in context",
+            "I can use a dictionary to check spelling and meaning"
+          ],
+          "starter": "Homophone challenge: write the correct version of there/their/they're in 5 sentences",
+          "guidedPractice": "Word investigation: look at the root 'port' — transport, import, export, portable — what do they share?",
+          "independentPractice": "Developing: practise statutory spelling list words. Expected: apply suffix rules. Mastery: use etymology to explain and spell related words.",
+          "masteryCheck": "Dictation: teacher reads 5 sentences using the statutory list and target words. Pupils self-correct."
+        }
+      ]
+    },
+    {
+      "name": "Writing – Composition",
+      "topics": [
+        {
+          "name": "Narrative Writing",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Plan writing by discussing the structure, vocabulary and grammar of similar writing",
+            "Draft and write by composing and rehearsing sentences orally before writing",
+            "Organise paragraphs around a theme",
+            "Create settings, characters and plot in narratives",
+            "Use a wide range of devices to build cohesion within and across paragraphs",
+            "Assess the effectiveness of their own and others' writing, suggesting improvements",
+            "Propose changes to vocabulary, grammar and punctuation to enhance effects",
+            "Proofread for spelling and punctuation errors"
+          ],
+          "keyVocab": [
+            { "term": "paragraph", "definition": "A group of sentences about the same idea, started on a new line" },
+            { "term": "cohesion", "definition": "How well a text flows and connects — using pronouns, connectives and vocabulary links" },
+            { "term": "setting", "definition": "The time and place where a story happens" },
+            { "term": "atmosphere", "definition": "The mood or feeling created in a text" },
+            { "term": "characterisation", "definition": "How an author shows what a character is like through words, actions and thoughts" },
+            { "term": "narrative voice", "definition": "The perspective from which a story is told (1st or 3rd person)" },
+            { "term": "tension", "definition": "A feeling of excitement or suspense created to engage the reader" }
+          ],
+          "masteryIndicators": [
+            "I can plan and write a narrative with a clear beginning, middle and end",
+            "I can develop a character or setting through word choice",
+            "I can use paragraphs to organise my writing",
+            "I can edit and improve my own writing for effect"
+          ],
+          "starter": "Show an image: pupils write one sentence of description — share; discuss most effective language choices",
+          "guidedPractice": "Shared writing: co-construct an opening paragraph for a story, teacher thinks aloud about choices; pupils evaluate",
+          "independentPractice": "Developing: complete a narrative scaffold. Expected: plan and write an opening independently. Mastery: write a complete narrative; experiment with narrative voice and structure for effect.",
+          "masteryCheck": "Swap writing with a partner — use WAGOLL (What A Good One Looks Like) checklist to give one positive and one target."
+        },
+        {
+          "name": "Persuasive Writing",
+          "years": ["Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Write for a range of real purposes and audiences including persuasion",
+            "Use a range of sentence structures for effect",
+            "Use modal verbs or adverbs to indicate degrees of possibility",
+            "Use devices to build cohesion, including repetition and rhetorical questions",
+            "Use the passive voice to affect how information is presented"
+          ],
+          "keyVocab": [
+            { "term": "persuasion", "definition": "Writing that aims to change the reader's view or get them to do something" },
+            { "term": "rhetorical question", "definition": "A question asked for effect — not expecting an actual answer" },
+            { "term": "modal verb", "definition": "A verb expressing possibility or necessity: can, could, will, would, should, must, might" },
+            { "term": "passive voice", "definition": "A sentence structure where the object becomes the subject, e.g. 'Mistakes were made'" },
+            { "term": "counterargument", "definition": "The opposing viewpoint — skilled persuasive writers acknowledge and dismiss it" },
+            { "term": "AFOREST", "definition": "Persuasive techniques: Alliteration, Facts, Opinions, Rhetorical questions, Emotive language, Statistics, Triples" }
+          ],
+          "masteryIndicators": [
+            "I can use rhetorical questions and emotive language for effect",
+            "I can structure a persuasive argument using PEEL (Point, Evidence, Explain, Link)",
+            "I can use modal verbs to express certainty and possibility",
+            "I can include a counter-argument and refute it"
+          ],
+          "starter": "Read two adverts — identify persuasive techniques used; rank them by effectiveness",
+          "guidedPractice": "Model PEEL paragraph together on the board: one persuasive point, with evidence and explanation",
+          "independentPractice": "Developing: write one persuasive sentence. Expected: write a PEEL paragraph. Mastery: full persuasive text with counter-argument and varied techniques.",
+          "masteryCheck": "Write a persuasive opening paragraph (5–7 sentences). Identify two techniques you used and explain why."
+        },
+        {
+          "name": "Poetry",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Prepare and perform poems, showing understanding through intonation, tone, volume and action",
+            "Discuss and express views about an author's choice of vocabulary",
+            "Identify how language, structure and presentation contribute to meaning in poetry",
+            "Compose poems drawing on the work of other poets"
+          ],
+          "keyVocab": [
+            { "term": "stanza", "definition": "A group of lines in a poem (like a paragraph in prose)" },
+            { "term": "rhythm", "definition": "The beat or pattern of stressed and unstressed syllables in a poem" },
+            { "term": "rhyme scheme", "definition": "The pattern of rhymes at the end of lines, labelled ABAB, AABB, etc." },
+            { "term": "simile", "definition": "A comparison using 'like' or 'as'" },
+            { "term": "metaphor", "definition": "A comparison that says one thing IS another" },
+            { "term": "personification", "definition": "Giving human qualities to non-human things" },
+            { "term": "alliteration", "definition": "Repeated consonant sounds at the start of nearby words" }
+          ],
+          "masteryIndicators": [
+            "I can identify and explain the effect of a poetic device",
+            "I can write a poem using at least two techniques",
+            "I can perform a poem with expression and impact",
+            "I can compare two poems and discuss similarities and differences"
+          ],
+          "starter": "Read a poem aloud twice — first for pleasure, second to identify techniques",
+          "guidedPractice": "Model writing a stanza inspired by a shared poem: make choices aloud about word sound and rhythm",
+          "independentPractice": "Developing: complete a poem frame. Expected: write an independent stanza. Mastery: write a complete original poem with deliberate technique choices.",
+          "masteryCheck": "Write one stanza of a poem. Underline a technique you used. Explain why you chose it."
+        }
+      ]
+    },
+    {
+      "name": "Writing – Grammar and Punctuation",
+      "topics": [
+        {
+          "name": "Grammar and Punctuation",
+          "years": ["Year 3", "Year 4", "Year 5", "Year 6"],
+          "objectives": [
+            "Use fronted adverbials with a comma",
+            "Use paragraphs to organise ideas around a theme",
+            "Use inverted commas and other punctuation to indicate direct speech",
+            "Use and punctuate relative clauses using relative pronouns",
+            "Use semi-colons, colons and dashes to mark boundaries between independent clauses",
+            "Use a colon to introduce a list",
+            "Use bullet points to list information",
+            "Use hyphens to avoid ambiguity",
+            "Use the subjunctive form in formal writing",
+            "Use passive verbs to affect the presentation of information"
+          ],
+          "keyVocab": [
+            { "term": "fronted adverbial", "definition": "A word, phrase or clause at the beginning of a sentence telling when, where or how, followed by a comma" },
+            { "term": "relative clause", "definition": "A clause that gives more information about a noun, introduced by who, which, that, whose, where, when" },
+            { "term": "semi-colon", "definition": "Punctuation (;) used to join two closely related independent clauses" },
+            { "term": "colon", "definition": "Punctuation (:) used to introduce a list or explanation" },
+            { "term": "direct speech", "definition": "The actual words spoken by someone, placed inside inverted commas" },
+            { "term": "parenthesis", "definition": "Additional information added to a sentence, placed in brackets, dashes or commas" },
+            { "term": "subordinate clause", "definition": "A clause that cannot stand alone and depends on the main clause" }
+          ],
+          "masteryIndicators": [
+            "I can use fronted adverbials correctly with a comma",
+            "I can punctuate direct speech with inverted commas",
+            "I can use relative clauses to add detail",
+            "I can use colons and semi-colons to punctuate complex sentences"
+          ],
+          "starter": "Fix it: correct the punctuation errors in 3 sentences on the board",
+          "guidedPractice": "Fronted adverbials: model changing 'She ran quickly' to 'Swiftly, she ran' — discuss effect; class try on whiteboards",
+          "independentPractice": "Developing: add a fronted adverbial to given sentences. Expected: write sentences using inverted commas and relative clauses. Mastery: rewrite a paragraph using varied, complex sentence structures.",
+          "masteryCheck": "Write 3 sentences: one with a fronted adverbial, one with a relative clause, one with direct speech."
+        }
+      ]
+    }
+  ]
+}
