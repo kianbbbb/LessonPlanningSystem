@@ -1,0 +1,309 @@
+{
+  "subject": "Literacy",
+  "keyStage": "KS1",
+  "ageRange": "5–7",
+  "years": ["Year 1", "Year 2"],
+  "programmeOfStudy": "UK National Curriculum 2014",
+  "strands": [
+    {
+      "name": "Spoken Language",
+      "topics": [
+        {
+          "name": "Speaking and Listening",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Listen and respond appropriately to adults and their peers",
+            "Ask relevant questions to extend their understanding",
+            "Use relevant strategies to build vocabulary",
+            "Articulate and justify answers, arguments and opinions",
+            "Describe events or experiences giving well-structured descriptions",
+            "Maintain attention and participate actively in collaborative conversations"
+          ],
+          "keyVocab": [
+            { "term": "audience", "definition": "The people who are listening" },
+            { "term": "speaker", "definition": "The person talking" },
+            { "term": "discuss", "definition": "Talk about something with others, sharing ideas" },
+            { "term": "opinion", "definition": "What you think or believe about something" },
+            { "term": "reason", "definition": "An explanation for why you think something" }
+          ],
+          "masteryIndicators": [
+            "I can listen carefully and respond to what others say",
+            "I can ask a question to find out more",
+            "I can explain my ideas in full sentences",
+            "I can take turns in a group discussion"
+          ],
+          "starter": "Show and Tell: one pupil describes an object from a bag using adjectives; class asks one question each",
+          "guidedPractice": "Think-Pair-Share: teacher poses a question, pupils discuss in pairs, then share with the class using 'We think… because…'",
+          "independentPractice": "Developing: answer with a word or phrase. Expected: answer in a full sentence with a reason. Mastery: ask a follow-up question and justify their view.",
+          "masteryCheck": "Give pupils a simple scenario — each explains what they would do and why, using a full sentence."
+        }
+      ]
+    },
+    {
+      "name": "Word Reading and Phonics",
+      "topics": [
+        {
+          "name": "Phonics – Decoding",
+          "years": ["Year 1"],
+          "objectives": [
+            "Apply phonic knowledge and skills as the route to decode words",
+            "Respond speedily with the correct sound to graphemes for all 40+ phonemes",
+            "Read accurately by blending sounds in unfamiliar words",
+            "Read common exception words",
+            "Read words containing taught GPCs and common suffixes",
+            "Read aloud accurately books that are consistent with their phonic knowledge"
+          ],
+          "keyVocab": [
+            { "term": "phoneme", "definition": "The smallest unit of sound in a word" },
+            { "term": "grapheme", "definition": "The written letter(s) that represent a phoneme" },
+            { "term": "GPC", "definition": "Grapheme-Phoneme Correspondence — the link between a written letter and its sound" },
+            { "term": "blend", "definition": "To push sounds together to read a word" },
+            { "term": "segment", "definition": "To split a word into individual sounds to spell it" },
+            { "term": "digraph", "definition": "Two letters that make one sound, e.g. 'sh', 'ch'" },
+            { "term": "common exception word", "definition": "A word that cannot easily be decoded phonically and must be learned by sight (e.g. 'said', 'the')" }
+          ],
+          "masteryIndicators": [
+            "I can quickly read all Phase 5 graphemes",
+            "I can blend to read unfamiliar words accurately",
+            "I can read at least 45 common exception words",
+            "I can read aloud with increasing fluency"
+          ],
+          "starter": "Flashcard speed round: show grapheme cards, pupils call the sound",
+          "guidedPractice": "Shared reading: teacher models blending for an unfamiliar word in context, then pupils try with partner support",
+          "independentPractice": "Developing: read simple CVC words. Expected: blend Phase 5 graphemes. Mastery: read unfamiliar multi-syllabic words and self-correct.",
+          "masteryCheck": "Read 10 words containing the target grapheme. Read 5 common exception words from the Year 1 list."
+        },
+        {
+          "name": "Fluency and Comprehension",
+          "years": ["Year 2"],
+          "objectives": [
+            "Continue to apply phonic knowledge until automatic decoding has become embedded",
+            "Read accurately whole words, including common exception words",
+            "Read most words quickly and accurately without sounding out loud",
+            "Read aloud books closely matched to improving reading level with confidence",
+            "Read words with common suffixes"
+          ],
+          "keyVocab": [
+            { "term": "fluency", "definition": "Reading smoothly, at a good pace, with expression" },
+            { "term": "accuracy", "definition": "Reading each word correctly" },
+            { "term": "expression", "definition": "Using your voice to show meaning — changing pace, tone and volume" },
+            { "term": "suffix", "definition": "Letters added to the end of a word to change its meaning, e.g. -ment, -ness, -ful" }
+          ],
+          "masteryIndicators": [
+            "I can read Year 2 common exception words fluently",
+            "I can read aloud with expression and appropriate pace",
+            "I can decode unfamiliar words quickly",
+            "I can self-correct when my reading doesn't make sense"
+          ],
+          "starter": "Paired reading: pupils read aloud to each other from a familiar text",
+          "guidedPractice": "Echo reading: teacher reads a sentence with expression, pupils repeat matching the expression",
+          "independentPractice": "Developing: read from levelled text aloud. Expected: read with pace and accuracy. Mastery: read with expression, changing pace/tone for effect.",
+          "masteryCheck": "Read a short passage aloud. Assess: accuracy, pace, expression. Can the pupil self-correct errors?"
+        }
+      ]
+    },
+    {
+      "name": "Reading – Comprehension",
+      "topics": [
+        {
+          "name": "Reading Comprehension",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Develop pleasure in reading, motivation to read, vocabulary and understanding",
+            "Understand both the books they can already read accurately and those they listen to",
+            "Explain clearly their understanding of what is read to them",
+            "Make inferences on the basis of what is being said and done",
+            "Predict what might happen on the basis of what has been read so far",
+            "Discuss the significance of the title and events",
+            "Make links between the book they are reading and other books they have read",
+            "Recognise and discuss simple recurring literary language"
+          ],
+          "keyVocab": [
+            { "term": "retrieve", "definition": "Find an answer that is directly in the text" },
+            { "term": "infer", "definition": "Work out something that is not directly stated using clues in the text" },
+            { "term": "predict", "definition": "Use clues to say what might happen next" },
+            { "term": "summarise", "definition": "Retell only the most important parts" },
+            { "term": "vocabulary", "definition": "The words used in a text" },
+            { "term": "fiction", "definition": "A made-up story" },
+            { "term": "non-fiction", "definition": "A text about real people, places or events" }
+          ],
+          "masteryIndicators": [
+            "I can retrieve information directly from the text",
+            "I can make a simple inference supported by evidence",
+            "I can predict what will happen next and give a reason",
+            "I can discuss the meaning of unfamiliar words using context"
+          ],
+          "starter": "Book talk: show the cover — what do you predict? What clues helped you?",
+          "guidedPractice": "Shared text: teacher reads, pauses to ask 'How do you know?', 'What does this word mean here?'; pupils answer with evidence",
+          "independentPractice": "Developing: one retrieval question (answer in text). Expected: one inference question with evidence. Mastery: explain how the author chose language to create effect.",
+          "masteryCheck": "Read the passage and answer: one retrieval, one inference, and one vocabulary question."
+        }
+      ]
+    },
+    {
+      "name": "Writing – Transcription",
+      "topics": [
+        {
+          "name": "Spelling",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Spell words containing each of the 40+ phonemes already taught",
+            "Spell common exception words for Years 1 and 2",
+            "Spell words with common suffixes: -s, -es, -ing, -ed, -er, -est",
+            "Add prefixes and suffixes: un-, -ful, -less, -ness, -ment",
+            "Apply simple spelling rules and guidance",
+            "Write from memory simple sentences dictated by the teacher"
+          ],
+          "keyVocab": [
+            { "term": "prefix", "definition": "Letters added to the start of a word to change its meaning, e.g. un-, dis-" },
+            { "term": "suffix", "definition": "Letters added to the end of a word to change its meaning, e.g. -ful, -ness" },
+            { "term": "root word", "definition": "The base word before a prefix or suffix is added" },
+            { "term": "double", "definition": "When a consonant is repeated before adding -ed or -ing, e.g. running" },
+            { "term": "syllable", "definition": "A beat or chunk within a word, e.g. hap-py has 2 syllables" }
+          ],
+          "masteryIndicators": [
+            "I can spell all Year 1 and Year 2 common exception words",
+            "I can add -ful, -less, -ness, -ment correctly",
+            "I can apply the doubling rule (running, hopping)",
+            "I can write dictated sentences accurately"
+          ],
+          "starter": "Look-cover-write-check with 5 words from the Year list",
+          "guidedPractice": "Investigate the suffix -ful: add to care, hope, help — notice the spelling pattern",
+          "independentPractice": "Developing: add suffix to given words. Expected: apply suffix rules in sentences. Mastery: investigate a new suffix and write their own examples.",
+          "masteryCheck": "Dictation: teacher reads 3 sentences using the target spelling pattern. Pupils write and self-mark."
+        },
+        {
+          "name": "Handwriting",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Sit correctly at a table, holding a pencil comfortably",
+            "Form lower-case letters in the correct direction, starting and finishing in the right place",
+            "Form capital letters and digits",
+            "Form lower-case letters of the correct size relative to each other",
+            "Begin to use some of the diagonal and horizontal strokes needed to join letters"
+          ],
+          "keyVocab": [
+            { "term": "ascender", "definition": "The part of a letter that rises above the x-height, e.g. b, d, h" },
+            { "term": "descender", "definition": "The part of a letter that falls below the baseline, e.g. g, p, y" },
+            { "term": "letter formation", "definition": "The correct starting point and direction for writing each letter" },
+            { "term": "join / ligature", "definition": "A stroke connecting one letter to the next" }
+          ],
+          "masteryIndicators": [
+            "I can form all lowercase letters correctly from the right starting point",
+            "I can form capital letters correctly",
+            "I can write letters consistently sized",
+            "I can begin joining letters using diagonal strokes"
+          ],
+          "starter": "Finger trace on partner's back — can they guess the letter?",
+          "guidedPractice": "Teacher models formation of letters in the target family on the board; pupils practise on whiteboards",
+          "independentPractice": "Developing: trace over dotted letters. Expected: copy letters independently. Mastery: form target letters in joined writing in sentences.",
+          "masteryCheck": "Write a sentence using the target letter family in best handwriting. Check: correct formation, size, spacing."
+        }
+      ]
+    },
+    {
+      "name": "Writing – Composition",
+      "topics": [
+        {
+          "name": "Narrative Writing",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Write sentences that can be read by themselves and others",
+            "Demarcate some sentences with capital letters and full stops",
+            "Use coordination (using or, and, but) and subordination (using when, if, that, because)",
+            "Sequence sentences to form short narratives",
+            "Re-read to check that their writing makes sense",
+            "Write about real events, recording these simply and clearly",
+            "Use the punctuation taught so far consistently"
+          ],
+          "keyVocab": [
+            { "term": "sentence", "definition": "A group of words that makes complete sense, starting with a capital letter and ending with punctuation" },
+            { "term": "conjunction", "definition": "A word that joins two clauses, e.g. and, but, because, when, if" },
+            { "term": "adjective", "definition": "A word that describes a noun" },
+            { "term": "adverb", "definition": "A word that adds detail to a verb" },
+            { "term": "noun", "definition": "A naming word — a person, place or thing" },
+            { "term": "verb", "definition": "A doing or being word" },
+            { "term": "capital letter", "definition": "An uppercase letter used to begin a sentence or a proper noun" }
+          ],
+          "masteryIndicators": [
+            "I can write a sentence that makes sense, with a capital letter and full stop",
+            "I can use 'because', 'and', 'but' to extend my sentences",
+            "I can sequence at least 3 sentences to tell a story",
+            "I can re-read my writing to check it makes sense"
+          ],
+          "starter": "Sentence or not? Teacher reads aloud — pupils show thumbs up/down if it is a complete sentence",
+          "guidedPractice": "Shared writing: class creates a story opening together using a picture stimulus; teacher models thinking aloud, checking sentences",
+          "independentPractice": "Developing: write one sentence about a picture. Expected: write 3+ linked sentences to start a story. Mastery: vary sentences using conjunctions; include adjectives for effect.",
+          "masteryCheck": "Write 3 sentences to continue the story. Check: capital letters, full stops, use of conjunction."
+        },
+        {
+          "name": "Non-fiction Writing",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Write about real events, recording these simply and clearly",
+            "Write for different purposes including writing under different headings",
+            "Use features of non-fiction texts: headings, labels, captions, questions",
+            "Discuss what they have written with the teacher or other pupils"
+          ],
+          "keyVocab": [
+            { "term": "heading", "definition": "A title for a section of writing" },
+            { "term": "subheading", "definition": "A smaller title within a section" },
+            { "term": "caption", "definition": "A sentence explaining a picture or diagram" },
+            { "term": "fact", "definition": "Something that is true and can be checked" },
+            { "term": "purpose", "definition": "The reason a text was written (to inform, instruct, persuade)" },
+            { "term": "audience", "definition": "Who the writing is for" }
+          ],
+          "masteryIndicators": [
+            "I can write facts in full sentences",
+            "I can use headings to organise my writing",
+            "I can write for a specific audience and purpose",
+            "I can include at least one non-fiction text feature"
+          ],
+          "starter": "Show two texts (fiction vs non-fiction) — how can you tell? What features give it away?",
+          "guidedPractice": "Shared write: create a fact file about an animal together — teacher models headings, caption, bullet-point facts",
+          "independentPractice": "Developing: complete a fact file template with given information. Expected: write own fact file with headings. Mastery: choose own non-fiction form and justify features used.",
+          "masteryCheck": "Write a short information text about [topic] with at least two headings and three facts."
+        }
+      ]
+    },
+    {
+      "name": "Writing – Grammar and Punctuation",
+      "topics": [
+        {
+          "name": "Sentence Grammar",
+          "years": ["Year 1", "Year 2"],
+          "objectives": [
+            "Leave spaces between words",
+            "Join words and clauses using 'and'",
+            "Begin to punctuate sentences using a capital letter and a full stop, question mark or exclamation mark",
+            "Use a capital letter for names of people, places, the days of the week, and the personal pronoun 'I'",
+            "Understand and use the following terminology: letter, capital letter, word, singular, plural, sentence, punctuation, full stop, question mark, exclamation mark",
+            "Subordination (using when, if, that, because) and coordination (using or, and, but)",
+            "Expanded noun phrases to describe and specify",
+            "Correct choice and consistent use of present tense and past tense",
+            "Use of the suffixes –ment, –ness, –ful, –less, –ly"
+          ],
+          "keyVocab": [
+            { "term": "noun phrase", "definition": "A noun and its describing words, e.g. 'the big red ball'" },
+            { "term": "expanded noun phrase", "definition": "A noun phrase made longer with adjectives and/or prepositional phrases" },
+            { "term": "subordinating conjunction", "definition": "A conjunction that joins a subordinate clause to a main clause, e.g. because, when, if, that" },
+            { "term": "co-ordinating conjunction", "definition": "A conjunction that joins two equal clauses, e.g. and, but, or" },
+            { "term": "tense", "definition": "Whether something is happening now (present) or happened before (past)" },
+            { "term": "singular", "definition": "One person or thing" },
+            { "term": "plural", "definition": "More than one person or thing" }
+          ],
+          "masteryIndicators": [
+            "I can use capital letters and full stops correctly",
+            "I can use question marks and exclamation marks",
+            "I can write expanded noun phrases",
+            "I can use subordinating conjunctions to extend sentences"
+          ],
+          "starter": "Punctuation surgeon: class corrects a paragraph with missing capital letters and full stops",
+          "guidedPractice": "Expanded noun phrase builder: start with 'the dog' → 'the fluffy, brown dog' → 'the fluffy, brown dog with a wagging tail'",
+          "independentPractice": "Developing: add capital letters and full stops to sentences. Expected: write expanded noun phrases in sentences. Mastery: write a paragraph using coordination and subordination.",
+          "masteryCheck": "Improve these sentences by adding expanded noun phrases and a conjunction: 'The cat sat. It was hungry.'"
+        }
+      ]
+    }
+  ]
+}
