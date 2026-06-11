@@ -102,18 +102,19 @@ function buildSlides(components, topicData, topic, timing) {
       ? resolveContent(component.id, topicData, topic)
       : '';
 
-    let timingMins = component.timing;
-    if (!timingMins && timing) {
-      const map = {
-        'starter': timing.starter,
-        'main-teaching': timing.mainTeaching,
-        'guided-practice': timing.guidedPractice,
-        'independent-practice': timing.independentPractice,
-        'mastery-check': timing.masteryCheck,
-        'plenary': timing.plenary,
-      };
-      timingMins = map[component.id] || null;
-    }
+    // Duration-specific timing guidance takes precedence over any
+    // hardcoded per-component timing; component.timing is only a fallback.
+    const map = timing
+      ? {
+          'starter': timing.starter,
+          'main-teaching': timing.mainTeaching,
+          'guided-practice': timing.guidedPractice,
+          'independent-practice': timing.independentPractice,
+          'mastery-check': timing.masteryCheck,
+          'plenary': timing.plenary,
+        }
+      : {};
+    const timingMins = map[component.id] ?? component.timing ?? null;
 
     return {
       id: component.id,

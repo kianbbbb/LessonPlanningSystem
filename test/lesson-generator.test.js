@@ -133,6 +133,29 @@ test('topicsForYear filters to the correct year', () => {
   assert.ok(names.includes('Ratio and Proportion'));
 });
 
+test('findTopic returns null for an empty or blank query', () => {
+  const c = loadCurriculum('maths', 'ks1');
+  assert.strictEqual(findTopic(c, ''), null);
+  assert.strictEqual(findTopic(c, '   '), null);
+});
+
+test('findTopic does not reverse-match short topic names', () => {
+  // A topic name shorter than 4 characters must not match just because it
+  // happens to appear inside the query string.
+  const synthetic = { strands: [{ name: 'Test', topics: [{ name: 'Ab' }] }] };
+  assert.strictEqual(findTopic(synthetic, 'collaborative work'), null);
+  // The forward direction (query within name) still works for short names
+  assert.ok(findTopic(synthetic, 'Ab') !== null);
+});
+
+test('topicsForYear is case-insensitive about the year group', () => {
+  const c = loadCurriculum('maths', 'ks1');
+  const lower = topicsForYear(c, 'Year 2').map(t => t.name);
+  const upper = topicsForYear(c, 'YEAR 2').map(t => t.name);
+  assert.ok(lower.length > 0);
+  assert.deepStrictEqual(upper, lower);
+});
+
 // ---------------------------------------------------------------------------
 // lesson-generator tests
 // ---------------------------------------------------------------------------
@@ -195,6 +218,32 @@ test('generateLesson handles unknown topic with fallback content', () => {
   assert.ok(lesson.wilf.length > 0);
 });
 
+test('45-minute lesson uses the 45min timing guidance', () => {
+  const lesson = generateLesson({
+    subject: 'maths',
+    yearGroup: 'Year 2',
+    topic: 'Fractions',
+    duration: 45,
+  });
+  const byId = Object.fromEntries(lesson.slides.map(s => [s.id, s]));
+  assert.strictEqual(byId['starter'].timingMins, 5);
+  assert.strictEqual(byId['independent-practice'].timingMins, 12);
+  assert.strictEqual(byId['plenary'].timingMins, 3);
+});
+
+test('60-minute lesson timings sum to 60 across timed slides', () => {
+  const lesson = generateLesson({
+    subject: 'maths',
+    yearGroup: 'Year 2',
+    topic: 'Fractions',
+    duration: 60,
+  });
+  const total = lesson.slides
+    .filter(s => typeof s.timingMins === 'number')
+    .reduce((sum, s) => sum + s.timingMins, 0);
+  assert.strictEqual(total, 60);
+});
+
 // ---------------------------------------------------------------------------
 // html-presenter tests
 // ---------------------------------------------------------------------------
@@ -244,6 +293,39 @@ test('HTML escapes dangerous characters', () => {
   const html = renderToHTML(lesson);
   assert.ok(!html.includes('<script>alert("xss")</script>'));
   assert.ok(html.includes('&lt;script&gt;'));
+});
+
+test('curriculum independent practice content reaches the HTML output', () => {
+  const lesson = generateLesson({ subject: 'maths', yearGroup: 'Year 2', topic: 'Fractions' });
+  const html = renderToHTML(lesson);
+  // Distinctive substrings from curriculum/maths/ks1.json Fractions independentPractice
+  assert.ok(html.includes('shade halves/quarters of shapes'));
+  assert.ok(html.includes('find fractions of amounts'));
+  assert.ok(html.includes('explain equivalence with diagrams'));
+  // The single-line string must be parsed into three differentiation cards
+  assert.ok(html.includes('diff-developing'));
+  assert.ok(html.includes('diff-expected'));
+  assert.ok(html.includes('diff-mastery'));
+});
+
+test('buildDiffSlide parses single-line Developing/Expected/Mastery content', () => {
+  const lesson = generateLesson({ subject: 'maths', yearGroup: 'Year 2', topic: 'Fractions' });
+  const slide = lesson.slides.find(s => s.id === 'independent-practice');
+  slide.content = 'Developing: Alpha task. Expected: Bravo task. Mastery: Charlie task.';
+  const html = renderToHTML(lesson);
+  assert.ok(html.includes('Alpha task'));
+  assert.ok(html.includes('Bravo task'));
+  assert.ok(html.includes('Charlie task'));
+});
+
+test('HTML output includes a Teacher Notes slide with strategies', () => {
+  const lesson = generateLesson({ subject: 'maths', yearGroup: 'Year 2', topic: 'Fractions' });
+  const html = renderToHTML(lesson);
+  assert.ok(html.includes('Teacher Notes'));
+  assert.ok(html.includes('SEN'));
+  assert.ok(html.includes('EAL'));
+  assert.ok(html.includes('Gifted &amp; Talented'));
+  assert.ok(html.includes('Mini-whiteboard responses'));
 });
 
 test('saveToFile writes a file that exists', () => {

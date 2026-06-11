@@ -90,13 +90,15 @@ function listTopics(curriculum) {
  * @returns {{topic: object, strand: string} | null}
  */
 function findTopic(curriculum, topicName) {
-  const query = topicName.toLowerCase();
+  const query = (topicName || '').trim().toLowerCase();
+  if (!query) return null;
   for (const strand of curriculum.strands || []) {
     for (const topic of strand.topics || []) {
-      if (
-        topic.name.toLowerCase().includes(query) ||
-        query.includes(topic.name.toLowerCase())
-      ) {
+      const name = topic.name.toLowerCase();
+      // Always allow the query to match within the topic name. Only allow
+      // the reverse direction (topic name inside the query) for reasonably
+      // long topic names, so tiny names cannot match almost anything.
+      if (name.includes(query) || (topic.name.length >= 4 && query.includes(name))) {
         return { topic, strand: strand.name };
       }
     }
@@ -111,11 +113,11 @@ function findTopic(curriculum, topicName) {
  * @returns {Array<{strand: string, name: string}>}
  */
 function topicsForYear(curriculum, yearGroup) {
-  const yearNorm = yearGroup.replace(/^\w/, c => c.toUpperCase());
+  const yearNorm = yearGroup.toLowerCase();
   const topics = [];
   for (const strand of curriculum.strands || []) {
     for (const topic of strand.topics || []) {
-      if (!topic.years || topic.years.includes(yearNorm)) {
+      if (!topic.years || topic.years.some(y => y.toLowerCase() === yearNorm)) {
         topics.push({ strand: strand.name, name: topic.name });
       }
     }

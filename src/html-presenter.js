@@ -18,9 +18,9 @@ const path = require('path');
  * @returns {string}       Full HTML document
  */
 function renderToHTML(lesson) {
-  const { meta, title, walt, wilf, keyVocabulary, slides } = lesson;
+  const { meta, title, walt, wilf, keyVocabulary, slides, differentiation, assessmentStrategies } = lesson;
 
-  const allSlides = buildSlideHTML(slides, { title, walt, wilf, keyVocabulary, meta });
+  const allSlides = buildSlideHTML(slides, { title, walt, wilf, keyVocabulary, meta, differentiation, assessmentStrategies });
   const totalSlides = allSlides.length;
 
   return `<!DOCTYPE html>
@@ -73,7 +73,7 @@ function renderToHTML(lesson) {
 // Slide builders
 // ---------------------------------------------------------------------------
 
-function buildSlideHTML(slides, { title, walt, wilf, keyVocabulary, meta }) {
+function buildSlideHTML(slides, { title, walt, wilf, keyVocabulary, meta, differentiation, assessmentStrategies }) {
   const result = [];
 
   // Title slide
@@ -96,6 +96,11 @@ function buildSlideHTML(slides, { title, walt, wilf, keyVocabulary, meta }) {
       default:
         result.push(buildGenericSlide(slide));
     }
+  }
+
+  // Teacher Notes slide — differentiation and assessment strategies
+  if (differentiation || (assessmentStrategies && assessmentStrategies.length > 0)) {
+    result.push(buildTeacherNotesSlide(differentiation, assessmentStrategies));
   }
 
   return result;
@@ -170,42 +175,59 @@ function buildVocabSlide(slide, keyVocabulary) {
   </div>`;
 }
 
+/**
+ * Parse differentiation tiers out of a content string.
+ * Handles both single-line curriculum data
+ *   "Developing: xxx. Expected: yyy. Mastery: zzz."
+ * and newline-separated AI/template content
+ *   "Developing: xxx\nExpected: yyy\nMastery: zzz"
+ * @param {string} content
+ * @returns {{developing?: string, expected?: string, mastery?: string} | null}
+ *          null when no tier markers were found.
+ */
+function parseDiffContent(content) {
+  if (!content) return null;
+  const markers = [...content.matchAll(/\b(Developing|Expected|Mastery)\s*:/gi)];
+  if (markers.length === 0) return null;
+
+  const tiers = {};
+  for (let i = 0; i < markers.length; i++) {
+    const key = markers[i][1].toLowerCase();
+    const start = markers[i].index + markers[i][0].length;
+    const end = i + 1 < markers.length ? markers[i + 1].index : content.length;
+    const text = content.slice(start, end).trim();
+    if (text && !tiers[key]) tiers[key] = text;
+  }
+  return Object.keys(tiers).length > 0 ? tiers : null;
+}
+
+function buildDiffGrid(developing, expected, mastery) {
+  return `
+    <div class="diff-grid">
+      ${developing ? `<div class="diff-card diff-developing"><div class="diff-label">&#9733; Developing</div><p>${escHtml(developing)}</p></div>` : ''}
+      ${expected ? `<div class="diff-card diff-expected"><div class="diff-label">&#9733;&#9733; Expected</div><p>${escHtml(expected)}</p></div>` : ''}
+      ${mastery ? `<div class="diff-card diff-mastery"><div class="diff-label">&#9733;&#9733;&#9733; Mastery</div><p>${escHtml(mastery)}</p></div>` : ''}
+    </div>`;
+}
+
 function buildDiffSlide(slide) {
-  const lines = (slide.content || '').split('\n').filter(Boolean);
+  const content = (slide.content || '').trim();
   let levels = '';
 
-  if (slide.differentiation) {
-    levels = `
-    <div class="diff-grid">
-      <div class="diff-card diff-developing">
-        <div class="diff-label">&#9733; Developing</div>
-        <p>${escHtml(slide.differentiation.developing)}</p>
-      </div>
-      <div class="diff-card diff-expected">
-        <div class="diff-label">&#9733;&#9733; Expected</div>
-        <p>${escHtml(slide.differentiation.expected)}</p>
-      </div>
-      <div class="diff-card diff-mastery">
-        <div class="diff-label">&#9733;&#9733;&#9733; Mastery</div>
-        <p>${escHtml(slide.differentiation.mastery)}</p>
-      </div>
-    </div>`;
-  } else if (lines.length > 0) {
-    // Parse "Developing: …\nExpected: …\nMastery: …" from content
-    const developing = lines.find(l => l.toLowerCase().startsWith('developing'));
-    const expected = lines.find(l => l.toLowerCase().startsWith('expected'));
-    const mastery = lines.find(l => l.toLowerCase().startsWith('mastery'));
-
-    if (developing || expected || mastery) {
-      levels = `
-      <div class="diff-grid">
-        ${developing ? `<div class="diff-card diff-developing"><div class="diff-label">&#9733; Developing</div><p>${escHtml(developing.replace(/^developing:\s*/i, ''))}</p></div>` : ''}
-        ${expected ? `<div class="diff-card diff-expected"><div class="diff-label">&#9733;&#9733; Expected</div><p>${escHtml(expected.replace(/^expected:\s*/i, ''))}</p></div>` : ''}
-        ${mastery ? `<div class="diff-card diff-mastery"><div class="diff-label">&#9733;&#9733;&#9733; Mastery</div><p>${escHtml(mastery.replace(/^mastery:\s*/i, ''))}</p></div>` : ''}
-      </div>`;
-    } else {
-      levels = `<p>${escHtml(lines.join(' '))}</p>`;
-    }
+  // Per-topic / AI-enriched content takes precedence over the generic
+  // boilerplate in slide.differentiation.
+  const tiers = parseDiffContent(content);
+  if (tiers) {
+    levels = buildDiffGrid(tiers.developing, tiers.expected, tiers.mastery);
+  } else if (content) {
+    // Content exists but carries no tier markers — show it as-is.
+    levels = `<p class="content-text">${escHtml(content.split('\n').filter(Boolean).join(' '))}</p>`;
+  } else if (slide.differentiation) {
+    levels = buildDiffGrid(
+      slide.differentiation.developing,
+      slide.differentiation.expected,
+      slide.differentiation.mastery
+    );
   }
 
   return `
@@ -233,6 +255,41 @@ function buildGenericSlide(slide) {
     <h2 class="slide-title-text">${escHtml(slide.fullName)}</h2>
     ${slide.timingMins ? `<div class="timing-badge">${slide.timingMins} min</div>` : ''}
     ${contentHTML}
+  </div>`;
+}
+
+function buildTeacherNotesSlide(differentiation, assessmentStrategies) {
+  const diff = differentiation || {};
+
+  const column = (label, items) => `
+      <div class="diff-card notes-card">
+        <div class="diff-label">${escHtml(label)}</div>
+        <ul class="notes-list">
+          ${(items || []).map(i => `<li>${escHtml(i)}</li>`).join('\n          ')}
+        </ul>
+      </div>`;
+
+  const assessmentHTML =
+    assessmentStrategies && assessmentStrategies.length > 0
+      ? `
+    <div class="assessment-box">
+      <div class="diff-label">Assessment Strategies</div>
+      <ul class="notes-list notes-list-inline">
+        ${assessmentStrategies.map(s => `<li>${escHtml(s)}</li>`).join('\n        ')}
+      </ul>
+    </div>`
+      : '';
+
+  return `
+  <div class="slide-inner" style="background:#34495e;color:#ffffff">
+    <div class="slide-label">Teacher Notes</div>
+    <h2 class="slide-title-text">Differentiation &amp; Assessment</h2>
+    <div class="diff-grid notes-grid">
+      ${column('SEN', diff.SEN)}
+      ${column('EAL', diff.EAL)}
+      ${column('Gifted & Talented', diff.giftedAndTalented)}
+    </div>
+    ${assessmentHTML}
   </div>`;
 }
 
@@ -529,6 +586,40 @@ function buildCSS() {
     .diff-expected   { background: rgba(255,255,255,0.20); }
     .diff-mastery    { background: rgba(232,160,32,0.30); }
 
+    /* Teacher Notes slide */
+    .notes-card { background: rgba(255,255,255,0.12); }
+    .notes-grid { flex: 0 1 auto; overflow-y: auto; }
+    .notes-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .notes-list li {
+      font-size: 0.78rem;
+      line-height: 1.4;
+      padding-left: 1em;
+      position: relative;
+      opacity: 0.9;
+    }
+    .notes-list li::before {
+      content: "\\25B8";
+      position: absolute;
+      left: 0;
+      opacity: 0.7;
+    }
+    .assessment-box {
+      background: rgba(255,255,255,0.12);
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-top: 16px;
+    }
+    .notes-list-inline {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4px 20px;
+    }
+
     /* Generic content */
     .content-list {
       list-style: none;
@@ -632,7 +723,7 @@ function buildJS(totalSlides) {
 // ---------------------------------------------------------------------------
 
 function escHtml(str) {
-  if (!str) return '';
+  if (str === null || str === undefined) return '';
   return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')

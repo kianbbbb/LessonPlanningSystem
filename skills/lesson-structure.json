@@ -34,7 +34,7 @@
       "required": true,
       "slideColor": "#0e6655",
       "slideTextColor": "#ffffff",
-      "timing": 5
+      "timing": null
     },
     {
       "id": "starter",

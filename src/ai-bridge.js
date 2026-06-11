@@ -26,7 +26,9 @@ let _cliCache = null;
  */
 function detectAvailableCLIs() {
   if (_cliCache) return _cliCache;
-  const copilot = isCommandAvailable('gh');
+  // 'gh' alone only proves the GitHub CLI is installed — the Copilot
+  // extension must respond for Copilot to be usable.
+  const copilot = isCommandAvailable('gh copilot');
   const opencode = isCommandAvailable('opencode');
   _cliCache = { copilot, opencode };
   return _cliCache;
@@ -130,7 +132,7 @@ function callGitHubCopilot(prompt) {
   try {
     const result = spawnSync(
       'gh',
-      ['copilot', 'suggest', '--hostname', 'github.com', '-t', 'shell', prompt.slice(0, 500)],
+      ['copilot', 'suggest', '--hostname', 'github.com', '-t', 'shell', prompt],
       { encoding: 'utf8', timeout: 30000, input: '\n' }
     );
     if (result.status === 0 && result.stdout) {
@@ -250,14 +252,14 @@ function enrichLesson(lesson, options = {}) {
   const parsed = parseAIResponse(rawResponse);
   if (!parsed) {
     if (verbose) process.stderr.write('[ai-bridge] Could not parse AI JSON response. Using template.\n');
-    return { lesson, aiUsed };
+    return { lesson, aiUsed: null };
   }
 
-  // Merge AI content into slides
+  // Merge AI content into slides (only string values are usable)
   const enrichedLesson = {
     ...lesson,
     slides: lesson.slides.map(slide => {
-      if (parsed[slide.id] && parsed[slide.id].trim()) {
+      if (typeof parsed[slide.id] === 'string' && parsed[slide.id].trim()) {
         return { ...slide, content: parsed[slide.id].trim(), aiEnriched: true };
       }
       return slide;

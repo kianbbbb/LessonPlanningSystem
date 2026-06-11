@@ -30,6 +30,7 @@ An AI-powered lesson planning tool for **primary school teachers** (KS1 & KS2, Y
   - **Independent Practice** — three differentiation tiers: ★ Developing / ★★ Expected / ★★★ Mastery (15 min)
   - **Mastery Check** — exit ticket questions (5 min)
   - **Plenary** — consolidation and reflection (5 min)
+  - **Teacher Notes** — SEN / EAL / Gifted & Talented differentiation strategies and assessment strategies on a final slide
 - 🤖 **AI assistant integration** — enriches lesson content via:
   - **GitHub Copilot CLI** (`gh copilot suggest`)
   - **OpenCode CLI** (`opencode`)
@@ -87,7 +88,16 @@ node bin/plan-lesson.js --subject literacy --year "Year 5" --topic "Persuasive W
 # Install globally and use the short command
 npm install -g .
 plan-lesson --subject maths --year "Year 4" --topic "Multiplication"
+
+# Show all available flags
+node bin/plan-lesson.js --help
+
+# Show the version number
+node bin/plan-lesson.js --version
 ```
+
+Flags: `--subject`, `--year`, `--topic`, `--class` (optional), `--duration`
+(45 or 60, default 60), `--ai` / `--no-ai`, `--help` / `-h` and `--version`.
 
 ---
 
@@ -96,10 +106,10 @@ plan-lesson --subject maths --year "Year 4" --topic "Multiplication"
 ### Maths — KS1 (Years 1–2)
 | Strand | Topics |
 |---|---|
-| Number and Place Value | Counting and Place Value, Addition within 20 |
+| Number and Place Value | Counting and Place Value, Addition and Subtraction within 20 |
 | Addition and Subtraction | Addition and Subtraction within 100 |
 | Multiplication and Division | Multiplication and Division (×2, ×5, ×10) |
-| Fractions | Halves, Quarters, Thirds |
+| Fractions | Fractions (halves, quarters, thirds) |
 | Measurement | Length and Height |
 | Geometry | 2D and 3D Shapes |
 
@@ -196,7 +206,7 @@ The `skills/lesson-structure.json` file defines the structure of every lesson pl
 npm test
 ```
 
-34 tests covering curriculum loading, lesson generation, HTML rendering and AI bridge parsing.
+42 tests covering curriculum loading, lesson generation, HTML rendering and AI bridge parsing.
 
 ---
 
